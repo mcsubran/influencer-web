@@ -58,13 +58,13 @@ body {
 
 .top-btn {
     background-color: #E02C6D;
-    height: 44px;
-    width: 196px;
     border-radius: 41px;
     color: white;
     padding: 10px 24px 10px 24px;
     text-decoration: none;
     font-size: 16px;
+    display: inline-block;
+    margin-top: 15px;
 }
 
 .top-sec-img img {
@@ -107,7 +107,7 @@ body {
 
 .popular-img img {
     width: 100%;
-    height: 100%;
+    height: 240px;
     border-radius: 5px;
 }
 
@@ -135,4 +135,146 @@ body {
     font-size: 16px;
     color: #E02C6D;
     text-decoration: none;
+}
+
+/* customar review  */
+
+.customar-review {
+    margin-top: 100px;
+}
+
+.review-cont {
+    box-shadow: 0 0 10px rgb(184, 174, 174);
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.review-title {
+    font-size: 28px;
+    color: #3A3A3A;
+    text-align: center;
+}
+
+
+.review-cint-img img {
+    width: 100%;
+    width: 100%;
+    border-radius: 5px;
+}
+
+.review-items {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px;
+    align-items: center;
+}
+
+
+
+.footer-cont {
+    text-align: center;
+    background-color: #0A0826;
+    padding: 70px;
+    margin-top: 100px;
+    color: white;
+}
+
+.footer-social a {
+    text-decoration: none;
+    color: white;
+    margin-left: 10px;
+}
+
+/* Responsive for 768 */
+
+@media only screen and (max-width: 768px) {
+    .container {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .manu-item {
+        display: none;
+    }
+
+    .manu-bar {
+        justify-content: center
+    }
+
+    .top-details {
+        margin-left: 30px;
+    }
+
+    .top-title-text {
+        font-size: 2.2em;
+    }
+
+    .top-sec-text {
+        font-size: 0.75em;
+    }
+
+    .top-btn {
+        margin-top: 50px;
+    }
+
+    .top-sec-img {
+        width: 70%;
+    }
+
+
+    .brand-img-main {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+
+    .popular-sec-items {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Responsive for 425 */
+@media only screen and (max-width: 426px) {
+    .container {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .manu-bar {
+        justify-content: center
+    }
+
+    .manu-item {
+        display: none;
+    }
+
+    .top-sec-itm {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+
+    .top-sec-text {
+        text-align: center;
+
+    }
+
+    .top-sec-img img {
+        width: 100%;
+    }
+
+    .top-btn {
+        margin-top: 10px;
+    }
+
+    .brand-img-main {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .popular-sec-items {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .review-items {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
 }
